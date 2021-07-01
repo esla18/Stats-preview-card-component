@@ -6,6 +6,11 @@
 }
 p {
     color: var(--clr-secondary-main-paragraph);
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
@@ -97,15 +102,25 @@ font-family: var(--ff-main);
 .text {
     height: 67%;
     width: 100%;
-    padding: 30px;
+    padding: 35px 40px;
+
 }
 .text > h1 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: var(--clr-secondary-main-heading);
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+.text > h1 > span {
+    color: var(--clr-primary-accent);
+}
+.text > p {
+    margin-bottom: 20px;
 }
 .data > p {
     font-family: var(--ff-secondary);
     text-transform: uppercase;
+
 }
 @media only screen and (min-width: 600px) {
     .text{
@@ -130,11 +145,4 @@ footer {
   }
 
 
-  /*Darker colour background using linear gradient but not following instructions completely
-
-  background: linear-gradient(
-        hsla(277, 72%, 35%, 0.5), 
-        hsla(277, 72%, 35%, 0.5)
-      ),
-    url("images/image-header-mobile.jpg");
-    */
+  
